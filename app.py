@@ -46,7 +46,7 @@ class PredictOut(BaseModel):
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    app.state.http = httpx.AsyncClient(timeout=30.0)
+    app.state.http = httpx.AsyncClient(timeout=180.0)
     yield
     await app.state.http.aclose()
 
