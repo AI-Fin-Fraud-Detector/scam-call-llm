@@ -1,11 +1,15 @@
 services:
   vllm:
-    image: my-modelscope
+    image: scam-call-llm-v1   
     volumes:
       - .:/workspace
     working_dir: /workspace
+    ipc: host
+    shm_size: 16g
     environment:
-      - CUDA_VISIBLE_DEVICES=7
+      - VLLM_USE_V1=0
+      - NCCL_P2P_DISABLE=1
+      - CUDA_VISIBLE_DEVICES=0
       - HF_TOKEN=${HF_TOKEN}
     deploy:
       resources:
@@ -18,10 +22,13 @@ services:
       swift deploy
       --use_hf true
       --infer_backend vllm
-      --model meta-llama/Llama-3.1-8B-Instruct
+      --model hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4  
       --adapters /workspace/output/llama31_8b_scam_real_sft_v4/v0-20260117-075831/checkpoint-108
       --served_model_name scam-8b-sft
+      --vllm_max_model_len 4096
+      --vllm_gpu_memory_utilization 0.90
       --max_new_tokens 1
+      --vllm_enforce_eager true
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
       interval: 30s
@@ -30,7 +37,7 @@ services:
       start_period: 600s
 
   app:
-    image: my-modelscope
+    image: scam-call-llm-v1   
     volumes:
       - .:/workspace
     working_dir: /workspace
