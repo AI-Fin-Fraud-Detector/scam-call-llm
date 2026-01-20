@@ -8,7 +8,7 @@ from pydantic import BaseModel
 from fastapi.responses import PlainTextResponse
 
 
-VLLM_URL = "http://127.0.0.1:8000/v1/chat/completions"
+VLLM_URL = "http://vllm:8000/v1/chat/completions"
 MODEL_NAME = "scam-8b-sft"
 
 SYSTEM_PROMPT = """You are a strict binary classification system specialized in fraud detection. Your task is to analyze a conversation log between two parties and determine if it exhibits characteristics of a scam or fraudulent intent.
