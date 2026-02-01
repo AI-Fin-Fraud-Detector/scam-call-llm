@@ -1,0 +1,14 @@
+[project]
+name = "scam-call-llm-app"
+version = "0.1.0"
+description = "FastAPI backend for Scam Call LLM"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "httpx",
+    "pydantic",
+]
+
+[tool.uv]
+dev-dependencies = []
