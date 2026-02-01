@@ -1,0 +1,36 @@
+FROM modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope:ubuntu22.04-cuda12.8.1-py311-torch2.9.0-vllm0.13.0-modelscope1.33.0-swift3.12.1
+
+ARG HF_TOKEN
+ARG GH_TOKEN
+
+RUN pip install fastapi uvicorn httpx
+RUN pip install 'ms-swift' transformers
+RUN pip install "autoawq" -U
+RUN pip install huggingface_hub
+
+# Install utilities for download
+RUN apt-get update && apt-get install -y curl unzip wget
+
+# Download Base Model
+RUN mkdir -p /model/base_model
+RUN HF_TOKEN=$HF_TOKEN huggingface-cli download --local-dir /model/base_model hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4
+
+# Download Adapters from GitHub Releases
+# URL for v0.1.0 tag, file output-20260120.zip
+RUN mkdir -p /model/adapters
+RUN curl -L -H "Authorization: token $GH_TOKEN" -o /model/adapters.zip https://github.com/AI-Fin-Fraud-Detector/scam-call-llm/releases/download/v0.1.0/output-20260120.zip
+RUN unzip /model/adapters.zip -d /model/adapters
+
+WORKDIR ${PROJECT_PATH}
+
+
+CMD ["bash", "-c", "swift deploy \
+    --use_hf true \
+    --infer_backend vllm \
+    --model /model/base_model \
+    --adapters /model/adapters/output/llama31_8b_scam_real_sft_v4/v0-20260117-075831/checkpoint-108 \
+    --served_model_name scam-8b-sft \
+    --vllm_max_model_len 4096 \
+    --vllm_gpu_memory_utilization 0.90 \
+    --max_new_tokens 1 \
+    --vllm_enforce_eager true"]
