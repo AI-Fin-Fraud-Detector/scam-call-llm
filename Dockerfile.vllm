@@ -17,8 +17,9 @@ RUN --mount=type=secret,id=HF_TOKEN,env=HF_TOKEN,required=true \
 # URL for v0.1.0 tag, file output-20260120.zip
 RUN mkdir -p /model/adapters
 RUN --mount=type=secret,id=GITHUB_TOKEN,env=GITHUB_TOKEN,required=true \
-    curl -L -H "Authorization: token $GITHUB_TOKEN" -o /model/adapters.zip https://github.com/AI-Fin-Fraud-Detector/scam-call-llm/releases/download/v0.1.0/output-20260120.zip
-RUN unzip /model/adapters.zip -d /model/adapters
+    curl -L -H "Authorization: token $GITHUB_TOKEN" -o /model/adapters.zip https://github.com/AI-Fin-Fraud-Detector/scam-call-llm/releases/download/v0.1.0/output-20260120.zip \
+    && unzip /model/adapters.zip -d /model/adapters \
+    && rm -rf /model/adapters.zip
 
 WORKDIR ${PROJECT_PATH}
 
