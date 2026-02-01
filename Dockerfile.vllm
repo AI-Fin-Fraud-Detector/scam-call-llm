@@ -1,8 +1,5 @@
 FROM modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope:ubuntu22.04-cuda12.8.1-py311-torch2.9.0-vllm0.13.0-modelscope1.33.0-swift3.12.1
 
-ARG HF_TOKEN
-ARG GH_TOKEN
-
 RUN pip install fastapi uvicorn httpx
 RUN pip install 'ms-swift' transformers
 RUN pip install "autoawq" -U
@@ -13,12 +10,14 @@ RUN apt-get update && apt-get install -y curl unzip wget
 
 # Download Base Model
 RUN mkdir -p /model/base_model
-RUN HF_TOKEN=$HF_TOKEN huggingface-cli download --local-dir /model/base_model hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4
+RUN --mount=type=secret,id=HF_TOKEN,env=HF_TOKEN,required=true \
+    huggingface-cli download --local-dir /model/base_model hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4
 
 # Download Adapters from GitHub Releases
 # URL for v0.1.0 tag, file output-20260120.zip
 RUN mkdir -p /model/adapters
-RUN curl -L -H "Authorization: token $GH_TOKEN" -o /model/adapters.zip https://github.com/AI-Fin-Fraud-Detector/scam-call-llm/releases/download/v0.1.0/output-20260120.zip
+RUN --mount=type=secret,id=GITHUB_TOKEN,env=GITHUB_TOKEN,required=true \
+    curl -L -H "Authorization: token $GITHUB_TOKEN" -o /model/adapters.zip https://github.com/AI-Fin-Fraud-Detector/scam-call-llm/releases/download/v0.1.0/output-20260120.zip
 RUN unzip /model/adapters.zip -d /model/adapters
 
 WORKDIR ${PROJECT_PATH}

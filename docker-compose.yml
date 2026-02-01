@@ -5,8 +5,9 @@ services:
       dockerfile: Dockerfile.vllm
       args:
         - PROJECT_PATH=/project/scam-call-llm
-        - HF_TOKEN=${HF_TOKEN}
-        - GH_TOKEN=${GH_TOKEN}
+      secrets:
+        - HF_TOKEN
+        - GITHUB_TOKEN
     ipc: host
     shm_size: 16g
     environment:
@@ -38,3 +39,9 @@ services:
     depends_on:
       vllm:
         condition: service_healthy
+
+secrets:
+  HF_TOKEN:
+    environment: HF_TOKEN
+  GITHUB_TOKEN:
+    environment: GITHUB_TOKEN
