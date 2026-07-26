@@ -10,5 +10,8 @@ dependencies = [
     "pydantic",
 ]
 
-[tool.uv]
-dev-dependencies = []
+[project.optional-dependencies]
+eval = [
+    "numpy",
+    "scikit-learn",
+]

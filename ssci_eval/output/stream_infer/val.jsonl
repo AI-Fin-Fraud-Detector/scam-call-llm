@@ -1,0 +1,120 @@
+{"idx": 0, "label": 1, "n_sentences": 43, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 43], "trigger_results": [false, false, false, true, true, true, true, true]}
+{"idx": 1, "label": 0, "n_sentences": 36, "trigger_lengths": [6, 12, 18, 24, 30, 36], "trigger_results": [false, false, false, false, false, false]}
+{"idx": 2, "label": 0, "n_sentences": 22, "trigger_lengths": [6, 12, 18, 22], "trigger_results": [false, false, false, false]}
+{"idx": 3, "label": 0, "n_sentences": 22, "trigger_lengths": [6, 12, 18, 22], "trigger_results": [false, false, false, false]}
+{"idx": 4, "label": 0, "n_sentences": 19, "trigger_lengths": [6, 12, 18, 19], "trigger_results": [true, false, false, false]}
+{"idx": 5, "label": 1, "n_sentences": 110, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66, 72, 78, 84, 90, 96, 102, 108, 110], "trigger_results": [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]}
+{"idx": 6, "label": 0, "n_sentences": 42, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42], "trigger_results": [false, false, false, false, false, false, false]}
+{"idx": 7, "label": 0, "n_sentences": 66, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66], "trigger_results": [false, false, false, false, false, false, false, false, false, false, false]}
+{"idx": 8, "label": 0, "n_sentences": 11, "trigger_lengths": [6, 11], "trigger_results": [false, false]}
+{"idx": 9, "label": 0, "n_sentences": 9, "trigger_lengths": [6, 9], "trigger_results": [false, false]}
+{"idx": 10, "label": 0, "n_sentences": 20, "trigger_lengths": [6, 12, 18, 20], "trigger_results": [false, false, false, false]}
+{"idx": 11, "label": 0, "n_sentences": 62, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 62], "trigger_results": [false, false, false, false, false, false, false, false, false, false, false]}
+{"idx": 12, "label": 0, "n_sentences": 31, "trigger_lengths": [6, 12, 18, 24, 30, 31], "trigger_results": [false, false, false, false, false, false]}
+{"idx": 13, "label": 0, "n_sentences": 22, "trigger_lengths": [6, 12, 18, 22], "trigger_results": [false, false, false, false]}
+{"idx": 14, "label": 0, "n_sentences": 20, "trigger_lengths": [6, 12, 18, 20], "trigger_results": [false, false, false, false]}
+{"idx": 15, "label": 0, "n_sentences": 14, "trigger_lengths": [6, 12, 14], "trigger_results": [false, false, false]}
+{"idx": 16, "label": 1, "n_sentences": 23, "trigger_lengths": [6, 12, 18, 23], "trigger_results": [true, true, true, true]}
+{"idx": 17, "label": 0, "n_sentences": 6, "trigger_lengths": [6], "trigger_results": [false]}
+{"idx": 18, "label": 0, "n_sentences": 20, "trigger_lengths": [6, 12, 18, 20], "trigger_results": [false, false, false, false]}
+{"idx": 19, "label": 0, "n_sentences": 21, "trigger_lengths": [6, 12, 18, 21], "trigger_results": [false, false, false, false]}
+{"idx": 20, "label": 0, "n_sentences": 47, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 47], "trigger_results": [false, false, false, false, false, false, false, false]}
+{"idx": 21, "label": 1, "n_sentences": 32, "trigger_lengths": [6, 12, 18, 24, 30, 32], "trigger_results": [false, false, true, true, true, true]}
+{"idx": 22, "label": 0, "n_sentences": 10, "trigger_lengths": [6, 10], "trigger_results": [false, false]}
+{"idx": 23, "label": 0, "n_sentences": 20, "trigger_lengths": [6, 12, 18, 20], "trigger_results": [false, false, false, false]}
+{"idx": 24, "label": 0, "n_sentences": 8, "trigger_lengths": [6, 8], "trigger_results": [false, false]}
+{"idx": 25, "label": 0, "n_sentences": 57, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 48, 54, 57], "trigger_results": [false, false, false, false, false, false, false, false, false, false]}
+{"idx": 26, "label": 1, "n_sentences": 60, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 48, 54, 60], "trigger_results": [false, true, true, true, true, true, true, true, true, true]}
+{"idx": 27, "label": 1, "n_sentences": 47, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 47], "trigger_results": [false, false, false, false, false, true, true, true]}
+{"idx": 28, "label": 0, "n_sentences": 7, "trigger_lengths": [6, 7], "trigger_results": [false, false]}
+{"idx": 29, "label": 0, "n_sentences": 21, "trigger_lengths": [6, 12, 18, 21], "trigger_results": [false, false, false, false]}
+{"idx": 30, "label": 0, "n_sentences": 16, "trigger_lengths": [6, 12, 16], "trigger_results": [false, false, false]}
+{"idx": 31, "label": 0, "n_sentences": 13, "trigger_lengths": [6, 12, 13], "trigger_results": [false, false, false]}
+{"idx": 32, "label": 0, "n_sentences": 19, "trigger_lengths": [6, 12, 18, 19], "trigger_results": [false, false, false, false]}
+{"idx": 33, "label": 1, "n_sentences": 138, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66, 72, 78, 84, 90, 96, 102, 108, 114, 120, 126, 132, 138], "trigger_results": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true]}
+{"idx": 34, "label": 0, "n_sentences": 18, "trigger_lengths": [6, 12, 18], "trigger_results": [false, false, false]}
+{"idx": 35, "label": 1, "n_sentences": 5, "trigger_lengths": [5], "trigger_results": [true]}
+{"idx": 36, "label": 0, "n_sentences": 33, "trigger_lengths": [6, 12, 18, 24, 30, 33], "trigger_results": [false, false, false, false, false, false]}
+{"idx": 37, "label": 0, "n_sentences": 30, "trigger_lengths": [6, 12, 18, 24, 30], "trigger_results": [false, false, false, false, false]}
+{"idx": 38, "label": 1, "n_sentences": 43, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 43], "trigger_results": [false, false, false, true, true, true, true, true]}
+{"idx": 39, "label": 0, "n_sentences": 14, "trigger_lengths": [6, 12, 14], "trigger_results": [false, false, false]}
+{"idx": 40, "label": 0, "n_sentences": 16, "trigger_lengths": [6, 12, 16], "trigger_results": [false, false, false]}
+{"idx": 41, "label": 0, "n_sentences": 13, "trigger_lengths": [6, 12, 13], "trigger_results": [false, false, false]}
+{"idx": 42, "label": 0, "n_sentences": 67, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66, 67], "trigger_results": [false, false, false, false, false, false, false, false, false, false, false, false]}
+{"idx": 43, "label": 0, "n_sentences": 20, "trigger_lengths": [6, 12, 18, 20], "trigger_results": [false, false, false, false]}
+{"idx": 44, "label": 0, "n_sentences": 25, "trigger_lengths": [6, 12, 18, 24, 25], "trigger_results": [false, false, false, false, false]}
+{"idx": 45, "label": 0, "n_sentences": 20, "trigger_lengths": [6, 12, 18, 20], "trigger_results": [false, false, false, false]}
+{"idx": 46, "label": 1, "n_sentences": 17, "trigger_lengths": [6, 12, 17], "trigger_results": [false, false, false]}
+{"idx": 47, "label": 0, "n_sentences": 47, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 47], "trigger_results": [false, false, false, false, false, false, false, false]}
+{"idx": 48, "label": 0, "n_sentences": 32, "trigger_lengths": [6, 12, 18, 24, 30, 32], "trigger_results": [false, false, false, false, false, false]}
+{"idx": 49, "label": 0, "n_sentences": 5, "trigger_lengths": [5], "trigger_results": [false]}
+{"idx": 50, "label": 1, "n_sentences": 27, "trigger_lengths": [6, 12, 18, 24, 27], "trigger_results": [false, false, false, false, false]}
+{"idx": 51, "label": 0, "n_sentences": 19, "trigger_lengths": [6, 12, 18, 19], "trigger_results": [false, false, false, false]}
+{"idx": 52, "label": 1, "n_sentences": 60, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 48, 54, 60], "trigger_results": [true, true, true, true, true, true, true, true, true, true]}
+{"idx": 53, "label": 0, "n_sentences": 49, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 48, 49], "trigger_results": [false, false, false, false, false, false, false, false, false]}
+{"idx": 54, "label": 0, "n_sentences": 20, "trigger_lengths": [6, 12, 18, 20], "trigger_results": [false, false, false, false]}
+{"idx": 55, "label": 0, "n_sentences": 21, "trigger_lengths": [6, 12, 18, 21], "trigger_results": [false, false, false, false]}
+{"idx": 56, "label": 0, "n_sentences": 7, "trigger_lengths": [6, 7], "trigger_results": [false, false]}
+{"idx": 57, "label": 0, "n_sentences": 49, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 48, 49], "trigger_results": [false, false, false, false, false, false, false, false, false]}
+{"idx": 58, "label": 0, "n_sentences": 30, "trigger_lengths": [6, 12, 18, 24, 30], "trigger_results": [false, false, false, false, false]}
+{"idx": 59, "label": 0, "n_sentences": 38, "trigger_lengths": [6, 12, 18, 24, 30, 36, 38], "trigger_results": [false, false, false, false, false, false, false]}
+{"idx": 60, "label": 0, "n_sentences": 6, "trigger_lengths": [6], "trigger_results": [false]}
+{"idx": 61, "label": 0, "n_sentences": 7, "trigger_lengths": [6, 7], "trigger_results": [false, false]}
+{"idx": 62, "label": 0, "n_sentences": 8, "trigger_lengths": [6, 8], "trigger_results": [false, false]}
+{"idx": 63, "label": 0, "n_sentences": 20, "trigger_lengths": [6, 12, 18, 20], "trigger_results": [false, false, false, false]}
+{"idx": 64, "label": 0, "n_sentences": 21, "trigger_lengths": [6, 12, 18, 21], "trigger_results": [false, false, false, false]}
+{"idx": 65, "label": 0, "n_sentences": 6, "trigger_lengths": [6], "trigger_results": [false]}
+{"idx": 66, "label": 0, "n_sentences": 32, "trigger_lengths": [6, 12, 18, 24, 30, 32], "trigger_results": [false, false, false, false, false, false]}
+{"idx": 67, "label": 0, "n_sentences": 20, "trigger_lengths": [6, 12, 18, 20], "trigger_results": [false, false, false, false]}
+{"idx": 68, "label": 0, "n_sentences": 7, "trigger_lengths": [6, 7], "trigger_results": [false, false]}
+{"idx": 69, "label": 0, "n_sentences": 10, "trigger_lengths": [6, 10], "trigger_results": [false, false]}
+{"idx": 70, "label": 1, "n_sentences": 19, "trigger_lengths": [6, 12, 18, 19], "trigger_results": [false, false, true, false]}
+{"idx": 71, "label": 1, "n_sentences": 53, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 48, 53], "trigger_results": [true, true, true, true, true, true, true, true, true]}
+{"idx": 72, "label": 0, "n_sentences": 20, "trigger_lengths": [6, 12, 18, 20], "trigger_results": [false, false, false, false]}
+{"idx": 73, "label": 0, "n_sentences": 7, "trigger_lengths": [6, 7], "trigger_results": [false, false]}
+{"idx": 74, "label": 0, "n_sentences": 33, "trigger_lengths": [6, 12, 18, 24, 30, 33], "trigger_results": [false, false, false, false, false, false]}
+{"idx": 75, "label": 0, "n_sentences": 6, "trigger_lengths": [6], "trigger_results": [false]}
+{"idx": 76, "label": 0, "n_sentences": 20, "trigger_lengths": [6, 12, 18, 20], "trigger_results": [false, false, false, false]}
+{"idx": 77, "label": 0, "n_sentences": 30, "trigger_lengths": [6, 12, 18, 24, 30], "trigger_results": [false, false, false, false, false]}
+{"idx": 78, "label": 0, "n_sentences": 21, "trigger_lengths": [6, 12, 18, 21], "trigger_results": [false, false, false, false]}
+{"idx": 79, "label": 0, "n_sentences": 8, "trigger_lengths": [6, 8], "trigger_results": [false, false]}
+{"idx": 80, "label": 0, "n_sentences": 50, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 48, 50], "trigger_results": [false, false, false, false, false, false, false, false, false]}
+{"idx": 81, "label": 1, "n_sentences": 26, "trigger_lengths": [6, 12, 18, 24, 26], "trigger_results": [true, true, true, true, true]}
+{"idx": 82, "label": 1, "n_sentences": 69, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66, 69], "trigger_results": [false, false, false, false, true, true, true, true, true, true, true, true]}
+{"idx": 83, "label": 0, "n_sentences": 33, "trigger_lengths": [6, 12, 18, 24, 30, 33], "trigger_results": [false, false, false, false, false, false]}
+{"idx": 84, "label": 1, "n_sentences": 78, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66, 72, 78], "trigger_results": [true, true, true, true, true, true, true, true, true, true, true, true, true]}
+{"idx": 85, "label": 0, "n_sentences": 22, "trigger_lengths": [6, 12, 18, 22], "trigger_results": [false, false, false, false]}
+{"idx": 86, "label": 0, "n_sentences": 19, "trigger_lengths": [6, 12, 18, 19], "trigger_results": [false, false, false, false]}
+{"idx": 87, "label": 0, "n_sentences": 16, "trigger_lengths": [6, 12, 16], "trigger_results": [false, false, false]}
+{"idx": 88, "label": 0, "n_sentences": 19, "trigger_lengths": [6, 12, 18, 19], "trigger_results": [false, false, false, false]}
+{"idx": 89, "label": 1, "n_sentences": 34, "trigger_lengths": [6, 12, 18, 24, 30, 34], "trigger_results": [false, true, true, true, true, true]}
+{"idx": 90, "label": 1, "n_sentences": 59, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 48, 54, 59], "trigger_results": [false, true, true, true, true, true, true, true, true, true]}
+{"idx": 91, "label": 0, "n_sentences": 20, "trigger_lengths": [6, 12, 18, 20], "trigger_results": [false, false, false, false]}
+{"idx": 92, "label": 0, "n_sentences": 17, "trigger_lengths": [6, 12, 17], "trigger_results": [false, false, false]}
+{"idx": 93, "label": 0, "n_sentences": 67, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66, 67], "trigger_results": [false, false, false, false, false, false, false, false, false, false, false, false]}
+{"idx": 94, "label": 1, "n_sentences": 75, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66, 72, 75], "trigger_results": [true, false, false, false, true, true, true, true, true, true, true, true, true]}
+{"idx": 95, "label": 0, "n_sentences": 67, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66, 67], "trigger_results": [false, false, false, false, false, false, false, false, false, false, false, false]}
+{"idx": 96, "label": 0, "n_sentences": 20, "trigger_lengths": [6, 12, 18, 20], "trigger_results": [false, false, false, false]}
+{"idx": 97, "label": 0, "n_sentences": 3, "trigger_lengths": [3], "trigger_results": [false]}
+{"idx": 98, "label": 0, "n_sentences": 25, "trigger_lengths": [6, 12, 18, 24, 25], "trigger_results": [false, false, false, false, false]}
+{"idx": 99, "label": 0, "n_sentences": 10, "trigger_lengths": [6, 10], "trigger_results": [false, false]}
+{"idx": 100, "label": 1, "n_sentences": 41, "trigger_lengths": [6, 12, 18, 24, 30, 36, 41], "trigger_results": [true, true, true, true, true, true, true]}
+{"idx": 101, "label": 0, "n_sentences": 30, "trigger_lengths": [6, 12, 18, 24, 30], "trigger_results": [false, false, false, false, false]}
+{"idx": 102, "label": 0, "n_sentences": 40, "trigger_lengths": [6, 12, 18, 24, 30, 36, 40], "trigger_results": [false, false, false, false, false, false, false]}
+{"idx": 103, "label": 0, "n_sentences": 54, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 48, 54], "trigger_results": [false, false, false, false, false, false, false, false, false]}
+{"idx": 104, "label": 0, "n_sentences": 36, "trigger_lengths": [6, 12, 18, 24, 30, 36], "trigger_results": [false, false, false, false, false, false]}
+{"idx": 105, "label": 0, "n_sentences": 20, "trigger_lengths": [6, 12, 18, 20], "trigger_results": [false, false, false, false]}
+{"idx": 106, "label": 0, "n_sentences": 55, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 48, 54, 55], "trigger_results": [false, false, false, false, false, false, false, false, false, false]}
+{"idx": 107, "label": 0, "n_sentences": 20, "trigger_lengths": [6, 12, 18, 20], "trigger_results": [false, false, false, false]}
+{"idx": 108, "label": 0, "n_sentences": 20, "trigger_lengths": [6, 12, 18, 20], "trigger_results": [false, false, false, false]}
+{"idx": 109, "label": 0, "n_sentences": 47, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 47], "trigger_results": [false, true, true, true, true, true, true, true]}
+{"idx": 110, "label": 1, "n_sentences": 56, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 48, 54, 56], "trigger_results": [false, false, false, false, true, true, true, true, true, true]}
+{"idx": 111, "label": 0, "n_sentences": 13, "trigger_lengths": [6, 12, 13], "trigger_results": [false, false, false]}
+{"idx": 112, "label": 0, "n_sentences": 62, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 62], "trigger_results": [false, false, false, false, false, false, false, false, false, false, false]}
+{"idx": 113, "label": 0, "n_sentences": 69, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66, 69], "trigger_results": [false, false, false, false, false, false, false, false, false, false, false, false]}
+{"idx": 114, "label": 0, "n_sentences": 53, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 48, 53], "trigger_results": [false, false, false, false, false, false, false, false, false]}
+{"idx": 115, "label": 0, "n_sentences": 20, "trigger_lengths": [6, 12, 18, 20], "trigger_results": [false, false, false, false]}
+{"idx": 116, "label": 0, "n_sentences": 7, "trigger_lengths": [6, 7], "trigger_results": [false, false]}
+{"idx": 117, "label": 0, "n_sentences": 56, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 48, 54, 56], "trigger_results": [false, false, false, false, false, false, false, false, false, false]}
+{"idx": 118, "label": 0, "n_sentences": 48, "trigger_lengths": [6, 12, 18, 24, 30, 36, 42, 48], "trigger_results": [false, false, false, false, false, false, false, false]}
+{"idx": 119, "label": 0, "n_sentences": 10, "trigger_lengths": [6, 10], "trigger_results": [false, false]}
