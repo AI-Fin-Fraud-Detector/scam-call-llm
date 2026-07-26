@@ -47,3 +47,31 @@ curl -X POST http://localhost:9000/predict \
   -H "Content-Type: application/json" \
   -d '{"text": "Congratulations! You have won a prize! Please provide your bank account and password, we will transfer the money to you."}'
 ```
+
+## Evaluation
+
+This repository includes two complementary evaluation paths:
+
+- `evaluation.py` computes the length- and class-weighted DWA metric for saved
+  full-conversation inference results across model families and checkpoints.
+- [`ssci_eval/`](ssci_eval/README.md) evaluates streaming-prefix decisions,
+  replays the Streaming Scam Confidence Index, calibrates alert thresholds,
+  analyzes caller-identity sensitivity, and reports time to detection.
+
+The SSCI integration is evaluation-only: it reuses the existing vLLM service and
+shared `real_data/` splits, but does not change the production `/predict` API.
+The committed calibration currently recommends a `0.50` threshold for
+`non_contact` callers; the legacy `0.65` constant is retained for reproducibility
+until a separate production decision is made.
+
+Start the evaluation runner with the existing vLLM service:
+
+```bash
+docker compose \
+  -f docker-compose.yml \
+  -f docker-compose.eval.yml \
+  up -d vllm ssci-eval
+```
+
+See [`ssci_eval/README.md`](ssci_eval/README.md) for the full pipeline, cached
+artifacts, metrics, limitations, and reproduction commands.
