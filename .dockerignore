@@ -1,0 +1,16 @@
+.git
+.venv
+__pycache__
+*.py[cod]
+.env
+.env.*
+
+# Training and evaluation artifacts are mounted at runtime, not copied into images.
+output
+inference_data
+real_data
+syn_data
+ssci_eval/output
+
+*.jsonl
+*.png

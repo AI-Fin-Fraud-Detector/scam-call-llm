@@ -1,0 +1,14 @@
+services:
+  ssci-eval:
+    build:
+      context: ./ssci_eval
+      dockerfile: Dockerfile
+    working_dir: /work
+    volumes:
+      - .:/work
+    environment:
+      VLLM_URL: http://vllm:8000/v1/chat/completions
+    depends_on:
+      vllm:
+        condition: service_healthy
+    command: sleep infinity
