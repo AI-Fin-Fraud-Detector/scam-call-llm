@@ -9,10 +9,13 @@ services:
         - HF_TOKEN
         - GITHUB_TOKEN
     shm_size: 16g
+    ports:
+      - "18000:8000"
     environment:
       - VLLM_USE_V1=0
       - NCCL_P2P_DISABLE=1
       - CUDA_VISIBLE_DEVICES=0
+      - VLLM_GPU_MEMORY_UTILIZATION=${VLLM_GPU_MEMORY_UTILIZATION:-0.60}
     deploy:
       resources:
         reservations:
