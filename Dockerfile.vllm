@@ -24,15 +24,15 @@ RUN --mount=type=secret,id=GITHUB_TOKEN,env=GITHUB_TOKEN,required=true \
 WORKDIR ${PROJECT_PATH}
 
 
-# vLLM serves only the scam classifier. The butler chat model runs as its own service (butler-llm).
-# VLLM_GPU_MEMORY_UTILIZATION (default 0.60) leaves room on the same GPU for butler-llm; set it in docker-compose.yml.
+# GPU share for vLLM; set VLLM_GPU_MEMORY_UTILIZATION in docker-compose.yml (default 0.60, shared with butler-llm)
 ENV VLLM_GPU_MEMORY_UTILIZATION=0.60
-CMD ["bash", "-c", "vllm serve /model/base_model \
-    --enable-lora \
-    --lora-modules scam-8b-sft=/model/adapters/output/llama31_8b_scam_real_sft_v4/v0-20260117-075831/checkpoint-108 \
-    --max-loras 1 \
-    --max-lora-rank 16 \
-    --max-model-len 12288 \
-    --gpu-memory-utilization ${VLLM_GPU_MEMORY_UTILIZATION} \
-    --enforce-eager \
-    --host 0.0.0.0 --port 8000"]
+CMD ["bash", "-c", "swift deploy \
+    --use_hf true \
+    --infer_backend vllm \
+    --model /model/base_model \
+    --adapters /model/adapters/output/llama31_8b_scam_real_sft_v4/v0-20260117-075831/checkpoint-108 \
+    --served_model_name scam-8b-sft \
+    --vllm_max_model_len 4096 \
+    --vllm_gpu_memory_utilization ${VLLM_GPU_MEMORY_UTILIZATION} \
+    --max_new_tokens 1 \
+    --vllm_enforce_eager true"]
