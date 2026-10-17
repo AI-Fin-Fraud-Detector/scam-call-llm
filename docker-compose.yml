@@ -9,8 +9,6 @@ services:
         - HF_TOKEN
         - GITHUB_TOKEN
     shm_size: 16g
-    ports:
-      - "18000:8000"
     environment:
       - VLLM_USE_V1=0
       - NCCL_P2P_DISABLE=1
